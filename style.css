@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: poppins, sans-serif;
+    color: white;
+}
+
+#home {
+    background-image: url(imgs/home-banner.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#home>nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px 0 150px;
+}
+
+#home>nav>.container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home>nav>.container>ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#home>nav>.container>ul a {
+    text-decoration: none;
+    color: white;
+    font: 500 12px / 80px"Poppins", sans-serif;
+    transition: 0.3s;
+}
+
+#home>nav>.container>ul a:hover {
+    color: #f3dc00;
+}
+
+#home>nav>.container>ul .selected-page{
+    color: #f3dc00;
+}
+
+#home>nav>.container svg {
+    fill: white;
+    width: 12px;
+    height: 12px;
+}
+
+#home .photography{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 60px;
+    background: black;
+    width: 555px;
+    height: 236px;
+    text-align: center;
+}
+
+#home .photography>h1{
+    font-family: Poppins, sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#home .photography>p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#home .photography>a{
+    text-decoration: none;
+    color: black;
+    font: 500 14px "Poppins", sans-serif;
+    background-color: #f3dc00;
+    padding: 10px 28px;
+    border-radius: 1px;
+    width: 177px;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    top: 40%;
+    font-weight: 500;
+}
+
+#gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background-color: #f9f9ff;
+    padding: 120px 0px;
+}
+
+#gallery>header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+#gallery>header>ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border: solid 1px #eeee;
+    width: 60%;
+    background-color: white;
+}
+
+#gallery>header>ul>li{
+    display: inline-block;
+    border: 1px solid #eeee;
+    padding: 10px 0px;
+    transition: 0.3s;
+}
+#gallery>header>ul>li>a{
+    text-decoration: none;
+    font: 500 12px "Poppins", sans-serif;
+    padding: 0px 30px;
+    transition: 0.3s;
+    color: black;
+}
+
+#gallery>header>ul>li:hover{
+    background-color: #f3dc00;
+}
+
+#gallery>header>ul>.selected-topic{
+    background-color: #f3dc00;
+    color: white;
+}
+
+#gallery>article{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+}
+
+#gallery>article>.images{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 15px 30px 15px;
+}
+
+#gallery>article>.images>div{
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%);
+    transition: 0.3s;
+}
+
+#gallery>article>.images img{
+    fit
+}
+
+#gallery>article>.images:hover img{
+    filter: brightness(0.5);
+}
+
+#gallery>article>.images:hover>div{
+    transform: translate(-50%, -50%);
+}
+
+#gallery>article>.images:hover>div svg{
+    fill: white;
+}
+
+#gallery>article>.images>div>a{
+    text-decoration: none;
+    font: 500 18px "Poppins", sans-serif;
+    margin: 10px 0px;
+    display: flex;
+    color: white;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#gallery>article>.images>div>a>svg {
+    padding-top: 5px;
+    fill: transparent;
+    width: 35px;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
